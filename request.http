@@ -1,0 +1,42 @@
+
+
+#########  WEB SEND TEXT("hello")
+###
+GET http://localhost:8080/test
+
+###
+GET http://localhost:8080/test
+Accept: text/html
+
+###  HTTP/1.1 200 OK but 406 - Not Acceptable page
+GET http://localhost:8080/test
+Accept: text/plain
+
+###  HTTP/1.1 200 OK but 406 - Not Acceptable page
+GET http://localhost:8080/test
+Accept: text/css
+
+###  HTTP/1.1 200 OK but 406 - Not Acceptable page
+GET http://localhost:8080/test
+Accept: application/json
+
+
+#########  WEB SEND TEXT("hello"; MIMETYPE FROM HEADER)
+###
+GET http://localhost:8080/manage
+
+###
+GET http://localhost:8080/manage
+Accept: text/html
+
+###
+GET http://localhost:8080/manage
+Accept: text/plain
+
+###
+GET http://localhost:8080/manage
+Accept: text/css
+
+###
+GET http://localhost:8080/manage
+Accept: application/json
