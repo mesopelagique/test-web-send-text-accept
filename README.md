@@ -3,9 +3,9 @@
 
 ## how to
 
-1- open the db and start the server
-2- open request.http in visual studio code ([visual studio code rest client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) must be installed)
-3- send the request provided
+1. open the db and start the server
+2. open request.http in visual studio code ([visual studio code rest client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) must be installed)
+3. send the request provided
 
 ## result
 
